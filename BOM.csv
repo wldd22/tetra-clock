@@ -1,5 +1,6 @@
 Part,Description,Quantity,Cost,Source
 Seeed Studio XIAO ESP32-C3,Microcontroller,1,$8.00,[Robu](https://robu.in/product/seeed-studio-xiao-esp32c3-tiny-mcu-board-with-wi-fi-and-ble-battery-charge-supported-power-efficiency-and-rich-interface/)
 0.91 inch 128x32 Blue OLED Display Module,OLED Screen,1,$2.20,[Robu](https://robu.in/product/0-91-inch-128x32-i2c-iic-serial-blue-oled-lcd-display-module/)
-PCB,,1,$5.00,[JLCPCB](https://jlcpcb.com/)
+PCB,Board,1,$5.00,[JLCPCB](https://jlcpcb.com/)
+1X20P Machined Pin Header,Pin headers for the MCU and display,1,$0.20,[Robu](https://robu.in/product/361030120sg111901-jiln-2-54x3-0machined-pin-header-1x20p-180-l11-96-upper-pinpoint0-60-bottom-pinpoint0-50-au1u-pps/)
 Shipping Total,,,$11.00,
