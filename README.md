@@ -1,3 +1,5 @@
+# Tetra Clock
+
 A custom alarm clock loosely based on the Blare guide.
 
 ## Details
