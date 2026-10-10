@@ -1,0 +1,14 @@
+[project]
+name = "tetra-clock"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "adafruit-circuitpython-display-text>=5.0.6",
+    "adafruit-circuitpython-displayio-ssd1306>=3.0.6",
+    "adafruit-circuitpython-ntp>=3.4.0",
+    "adafruit-circuitpython-ssd1306>=2.12.24",
+    "board>=1.0",
+    "circuitpython-stubs>=10.3.1",
+    "socketpool",
+    "wifi>=0.3.8",
+]
