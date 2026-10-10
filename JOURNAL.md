@@ -23,7 +23,7 @@
 **1.67h**
 
 I read through the Blare alarm clock guide and decided what I wanted my clock to be like. Then I picked the components:
-- Seeed Studio XIAO ESP32-C3 ( Just like the guide)
+- Seeed Studio XIAO ESP32-C3 (Just like the guide)
 - 3.3V Piezo Buzzer (Just like the guide)
 - 0.91 inch 128x32 OLED display
 
