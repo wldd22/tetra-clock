@@ -20,8 +20,8 @@ Capacitive touchpads are used to set interact with the clock.
 
 ### Schematic
 
-![Schematic](images/schematic.png)
+![Schematic](images/Schematic.png)
 
 ### PCB
 
-![PCB](images/routing.png)
+![PCB](images/Routing.png)
