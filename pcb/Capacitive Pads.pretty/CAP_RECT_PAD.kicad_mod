@@ -1,0 +1,123 @@
+(footprint "CAP_RECT_PAD"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -8.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a45f050d-d7cd-42fd-8925-653b63aaba88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "CAP_RECT_PAD"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3238f461-34f8-4725-81a4-65badeb777d0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "da923f3d-d467-4d2d-aeae-93b69e3f4711")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05dead3d-6d30-459f-a329-15af6c7cd5a2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(solder_mask_margin 0.5)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "413f7ca5-fcfe-4109-93bf-f454d3e3611c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 14 14)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.2)
+		(chamfer top_left top_right bottom_left bottom_right)
+		(uuid "2109d1dc-e58c-436c-a25e-518959c2099e")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "b0c3ea1d-7aa9-4cca-8b23-211838df87f6")
+		(name "Capacitive Keepout")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 4.48463 -8.979643) (xy 4.763465 -8.918986) (xy 5.03083 -8.819264) (xy 5.281282 -8.682507) (xy 5.509721 -8.511499)
+				(xy 5.614214 -8.414214) (xy 8.414214 -5.614214) (xy 8.601082 -5.398555) (xy 8.755358 -5.158498)
+				(xy 8.873899 -4.898928) (xy 8.954294 -4.625131) (xy 8.994904 -4.342678) (xy 9 -4.2) (xy 9 4.2) (xy 8.979643 4.48463)
+				(xy 8.918986 4.763465) (xy 8.819264 5.03083) (xy 8.682507 5.281282) (xy 8.511499 5.509721) (xy 8.414214 5.614214)
+				(xy 5.614214 8.414214) (xy 5.398555 8.601082) (xy 5.158498 8.755358) (xy 4.898928 8.873899) (xy 4.625131 8.954294)
+				(xy 4.342678 8.994904) (xy 4.2 9) (xy -4.2 9) (xy -4.48463 8.979643) (xy -4.763465 8.918986) (xy -5.03083 8.819264)
+				(xy -5.281282 8.682507) (xy -5.509721 8.511499) (xy -5.614214 8.414214) (xy -8.414214 5.614214)
+				(xy -8.601082 5.398555) (xy -8.755358 5.158498) (xy -8.873899 4.898928) (xy -8.954294 4.625131)
+				(xy -8.994904 4.342678) (xy -9 4.2) (xy -9 -4.2) (xy -8.979643 -4.48463) (xy -8.918986 -4.763465)
+				(xy -8.819264 -5.03083) (xy -8.682507 -5.281282) (xy -8.511499 -5.509721) (xy -8.414214 -5.614214)
+				(xy -5.614214 -8.414214) (xy -5.398555 -8.601082) (xy -5.158498 -8.755358) (xy -4.898928 -8.873899)
+				(xy -4.625131 -8.954294) (xy -4.342678 -8.994904) (xy -4.2 -9) (xy 4.2 -9)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
