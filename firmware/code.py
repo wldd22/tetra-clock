@@ -4,6 +4,9 @@ import rtc
 import wifi
 import socketpool
 import board
+import pwmio
+import touchio
+import digitalio
 import displayio
 import terminalio
 import adafruit_ntp
@@ -27,6 +30,21 @@ MONTHS = (
     "Jan", "Feb", "Mar", "Apr",
     "May", "Jun", "Jul", "Aug",
     "Sep", "Oct", "Nov", "Dec"
+)
+
+# -------------------------
+# Capacitive touch and buzzer setup
+# -------------------------
+
+TOUCH_PINS = [board.D0, board.D1, board.D2, board.D3] # D0-D3
+BUZZER_PIN = board.D7
+
+touch = [touchio.TouchIn(TOUCH_PIN) for TOUCH_PIN in TOUCH_PINS]
+
+buzzer = pwmio.PWMOut(
+    BUZZER_PIN,
+    frequency=2000,
+    duty_cycle=0
 )
 
 # -------------------------
@@ -161,5 +179,11 @@ while True:
     else:
         clock_text.text = "--:--:--"
         date_text.text = "Waiting for Wi-Fi"
+
+    # Handle touch input and buzzer output
+    if touch[0].value:
+        buzzer.duty_cycle = 32768  # Buzzer ON
+    else:
+        buzzer.duty_cycle = 0  # Buzzer OFF
 
     time.sleep(0.2)
