@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 3.67h | 2 |
+| Week 1 | Tier 1 | 4.97h | 2 |
 
 ## Contents
 
@@ -40,7 +40,7 @@ Then I created the schematic and routed the PCB after importing all the symbol a
 
 ### 2026-10-10 – - Made the BOM
 
-**2h**
+**3.3h**
 
 - Made the BOM
 - Generated the gerber files
