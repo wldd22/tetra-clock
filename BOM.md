@@ -15,7 +15,7 @@
 | [Seeed Studio XIAO ESP32-C3](https://robu.in/product/seeed-studio-xiao-esp32c3-tiny-mcu-board-with-wi-fi-and-ble-battery-charge-supported-power-efficiency-and-rich-interface/) | Microcontroller | 1 | $8.00 | $8.00 | [Robu](https://robu.in/product/seeed-studio-xiao-esp32c3-tiny-mcu-board-with-wi-fi-and-ble-battery-charge-supported-power-efficiency-and-rich-interface/) |
 | [0.91 inch 128x32 Blue OLED Display Module](https://robu.in/product/0-91-inch-128x32-i2c-iic-serial-blue-oled-lcd-display-module/) | OLED Screen | 1 | $2.20 | $2.20 | [Robu](https://robu.in/product/0-91-inch-128x32-i2c-iic-serial-blue-oled-lcd-display-module/) |
 | **Parts subtotal** | — | — | — | **$10.20** | — |
-| **Tax & shipping** | — | — | — | **$0.50** | — |
-| **Total** | — | — | — | **$10.70** | — |
+| **Tax & shipping** | — | — | — | **$0.60** | — |
+| **Total** | — | — | — | **$10.80** | — |
 
-$19.30 left of the tier's funding.
+$19.20 left of the tier's funding.
