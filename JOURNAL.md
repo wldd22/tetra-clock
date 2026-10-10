@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 1.42h | 1 |
+| Week 1 | Tier 1 | 1.67h | 1 |
 
 ## Contents
 
@@ -20,7 +20,7 @@
 
 ### 2026-10-10 – I read through the Blare alarm clock guide and decided what I wanted my clock to be like. Then I picked the components:
 
-**1.42h**
+**1.67h**
 
 I read through the Blare alarm clock guide and decided what I wanted my clock to be like. Then I picked the components:
 - Seeed Studio XIAO ESP32-C3 ( Just like the guide)
@@ -28,5 +28,11 @@ I read through the Blare alarm clock guide and decided what I wanted my clock to
 - 0.91 inch 128x32 OLED display
 
 I decided to use capacitive pads as buttons like I've done in previous projects since it means less components, a cheaper BOM, and a slimmer final product.
+
+Then I created the schematic and routed the PCB after importing all the symbol and footprint libraries I needed.
+
+![Schematic](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/8d4d67daf0ec4736122eae1abb7037d685929ac90ef85bf929d967532ef02623.png)
+
+![Routing](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/c107fd9686621b75c65b1953216e295b3917e4fa0632fb8d1e90bf6df71f5b48.png)
 
 [Timelapse](https://lookout.hackclub.com/api/media/a92d8e89-2ee9-4b58-99f0-6815d1b0ffbe/video.mp4)
