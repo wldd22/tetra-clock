@@ -13,8 +13,8 @@ but the design and firmware were created from scratch by me.
 
 The design uses a XIAO ESP32-S3 as the microcontroller, and a
 0.91 inch 128x32 OLED display (that uses the SSD1306 driver) to
-display the time. The alarm sound is played by a piezo buzzer.
-Capacitive touchpads are used to set interact with the clock.
+display the time. The alarm sound is played by a 3.3V Piezo Buzzer.
+Capacitive touchpads are used to interact with the clock.
 
 ## Images
 
