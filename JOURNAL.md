@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 1 | Tier 1 | 9.8h | 5 |
+| Week 1 | Tier 1 | 10.2h | 5 |
 
 ## Contents
 
@@ -18,7 +18,7 @@
 2. [2026-10-10 – - Made the BOM](#2026-10-10---made-the-bom)
 3. [2026-10-10 – Created the README.md and add basic interaction to the firmware. Now, if the first capacitive touchpad is held down, the buzzer beeps. I'll add more in-depth functionality (like setting alarm times) l](#2026-10-10-created-the-readmemd-and-add-basic-interaction-to)
 4. [2026-10-11 – I changed the main time display. Now, instead of showing the date, time, and status, on different lines, the date and time is shown on the same time, as an ISO 8601 timestamp, making use of the extra](#2026-10-11-i-changed-the-main-time-display-now-instead-of-sh)
-5. [2026-10-11 – Work session](#2026-10-11-work-session)
+5. [2026-10-11 – I designed the two screens of the clock: the home screen and the alarm screen.](#2026-10-11-i-designed-the-two-screens-of-the-clock-the-home-)
 
 ## Design
 
@@ -76,8 +76,20 @@ Here's what that looks like in [Lopaka](https://lopaka.app), the site I'm using 
 
 ![Display after time syncing](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/50f61b5f8085ccd0cfb598dfdc0ba742f5107e7935e6335e16014e2f7dc41cd8.png)
 
-### 2026-10-11 – Work session
+### 2026-10-11 – I designed the two screens of the clock: the home screen and the alarm screen.
 
-**1.63h**
+**2.03h**
+
+I designed the two screens of the clock: the home screen and the alarm screen.
+
+On the home screen, you can easily enable and disable the alarm and see its current status via an icon in the corner. You can also edit the alarm, switching to the alarm screen.
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/1dfbd7622105c4f2ecaee71e7bcca890854de58210bd608f9ab1264670b61232.png)
+
+On the alarm screen, there's two modes, one where you're editing the alarm time, switching between hours and minutes with one button and incrementing/decrementing with another button, and the other where you can enable or disable the alarm and snooze functionality. And of course, you can then switch back to the home screen.
+
+![image](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/WlipWVmF6UnTGNkVVXdowr37dB4xoM3o/a38806ed0a57fc2eeed1ce2d24653333f2dd0b18e41eada2f8eafe9305f826cc.png)
+
+Later I will implement the actual alarm sound functionality and snoozing, along with saving the alarm data so that if power is removed and returned, it will remain.
 
 [Timelapse](https://lookout.hackclub.com/api/media/699b22d4-a888-4b0d-8b94-f1994193e4b1/video.mp4)
