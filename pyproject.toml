@@ -3,6 +3,7 @@ name = "tetra-clock"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
+    "adafruit-circuitpython-display-shapes>=2.10.6",
     "adafruit-circuitpython-display-text>=5.0.6",
     "adafruit-circuitpython-displayio-ssd1306>=3.0.6",
     "adafruit-circuitpython-ntp>=3.4.0",

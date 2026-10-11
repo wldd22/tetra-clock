@@ -72,6 +72,18 @@ wheels = [
 ]
 
 [[package]]
+name = "adafruit-circuitpython-display-shapes"
+version = "2.10.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "adafruit-blinka" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6d/49/53b9e388faff6f40f82d6024bcec7736321a7db7a0b600c24a922858df3b/adafruit_circuitpython_display_shapes-2.10.6.tar.gz", hash = "sha256:3b549a969c0df45d61401915664443264b50720d0a92bc24cacc2ee8f4eeb72a", size = 36689, upload-time = "2026-04-23T21:19:29.268Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/04/14/de5ce1b4374842f82dbbd01e51009ede3313987fece29afa721921be5cd1/adafruit_circuitpython_display_shapes-2.10.6-py3-none-any.whl", hash = "sha256:2cd4bdeee927f1dcb23f6f420e672cdf4db8326435ab4d2588de3c832c0e531f", size = 20962, upload-time = "2026-04-23T21:19:28.239Z" },
+]
+
+[[package]]
 name = "adafruit-circuitpython-display-text"
 version = "5.0.6"
 source = { registry = "https://pypi.org/simple" }
@@ -301,6 +313,7 @@ name = "tetra-clock"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "adafruit-circuitpython-display-shapes" },
     { name = "adafruit-circuitpython-display-text" },
     { name = "adafruit-circuitpython-displayio-ssd1306" },
     { name = "adafruit-circuitpython-ntp" },
@@ -313,6 +326,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "adafruit-circuitpython-display-shapes", specifier = ">=2.10.6" },
     { name = "adafruit-circuitpython-display-text", specifier = ">=5.0.6" },
     { name = "adafruit-circuitpython-displayio-ssd1306", specifier = ">=3.0.6" },
     { name = "adafruit-circuitpython-ntp", specifier = ">=3.4.0" },
