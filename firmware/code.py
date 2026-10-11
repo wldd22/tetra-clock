@@ -22,7 +22,7 @@ WIDTH = 128
 HEIGHT = 32
 OLED_ADDRESS = 0x3C
 
-IST_OFFSET_SECONDS = 5 * 3600 + 30 * 60
+TIME_OFFSET_SECONDS = 5 * 3600 + 30 * 60
 WIFI_RETRY_SECONDS = 30
 NTP_RETRY_SECONDS = 3600
 
@@ -70,26 +70,26 @@ root = displayio.Group()
 display.root_group = root
 
 # Large time, centred on the display
-clock_text = label.Label(
+datetime_text = label.Label(
     terminalio.FONT,
-    text="--:--:--",
+    text="XXXX-XX-XX XX:XX:XX",
     color=0xFFFFFF,
-    scale=2,
-    x=16,
-    y=12
+    scale=1,
+    x=7,
+    y=15
 )
 
-# Date on the bottom line
-date_text = label.Label(
+status_text = label.Label(
     terminalio.FONT,
-    text="Waiting for NTP",
+    text="",
     color=0xFFFFFF,
-    x=25,
-    y=29
+    scale=1,
+    x=0,
+    y=27
 )
 
-root.append(clock_text)
-root.append(date_text)
+root.append(datetime_text)
+root.append(status_text)
 
 # -------------------------
 # Network and clock setup
@@ -102,6 +102,7 @@ time_is_valid = False
 last_wifi_attempt = -WIFI_RETRY_SECONDS
 last_ntp_attempt = -NTP_RETRY_SECONDS
 
+status_text.text = "Initialising..."
 
 def synchronize_time():
     """Connect to Wi-Fi if needed and set the RTC from NTP."""
@@ -110,6 +111,7 @@ def synchronize_time():
     try:
         if not wifi.radio.connected:
             print("Connecting to Wi-Fi...")
+            status_text.text = "Connecting to Wi-Fi..."
 
             ssid = os.getenv("CIRCUITPY_WIFI_SSID")
             password = os.getenv("CIRCUITPY_WIFI_PASSWORD")
@@ -131,25 +133,28 @@ def synchronize_time():
             )
 
         print("Requesting NTP time...")
+        status_text.text = "Requesting NTP time..."
 
         # NTP supplies UTC.
         utc = ntp.datetime
 
-        # Convert UTC calendar time to an epoch, then apply IST.
+        # Convert UTC calendar time to an epoch, then apply local timezone.
         utc_seconds = time.mktime(utc)
-        ist = time.localtime(
-            utc_seconds + IST_OFFSET_SECONDS
+        local_time = time.localtime(
+            utc_seconds + TIME_OFFSET_SECONDS
         )
 
-        # CircuitPython's system RTC now holds IST wall-clock time.
-        rtc.RTC().datetime = ist
+        # CircuitPython's system RTC now holds local wall-clock time.
+        rtc.RTC().datetime = local_time
 
         time_is_valid = True
 
-        print("Time synchronised:", ist)
+        print("Time synchronised:", local_time)
+        status_text.text = f"Time synchronised"
 
     except Exception as error:
         print("Synchronisation failed:", error)
+        status_text.text = f"Syncing failed"
 
 
 # -------------------------
@@ -173,12 +178,10 @@ while True:
 
     if time_is_valid:
         now = time.localtime()
-        clock_text.text = f"{now.tm_hour:02d}:{now.tm_min:02d}:{now.tm_sec:02d}"
-        date_text.text = f"{now.tm_mday:02d} {MONTHS[now.tm_mon - 1]} {now.tm_year:04d}"
-
+        datetime_text.text = f"{now.tm_year:04d}-{now.tm_mon:02d}-{now.tm_mday:02d} "
+        f"{now.tm_hour:02d}:{now.tm_min:02d}:{now.tm_sec:02d}"
     else:
-        clock_text.text = "--:--:--"
-        date_text.text = "Waiting for Wi-Fi"
+        datetime_text.text = "XXXX-XX-XX XX:XX:XX"
 
     # Handle touch input and buzzer output
     if touch[0].value:
