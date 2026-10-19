@@ -10,7 +10,7 @@ This PCB is a simple alarm clock display I designed to show the date and time, a
 
 - **Microcontroller**: XIAO ESP32-S3
 - **Display**: 0.91 inch 128x32 OLED display (SSD1306 driver)
-- **Sound**: 3.3V Piezo Buzzer
+- **Sound**: 3V Active Electromagnetic Buzzer
 - **Input**: Capacitive touchpads
 
 **Features**:
