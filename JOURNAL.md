@@ -4,7 +4,7 @@
 <!-- Generated: 2026-10-11T09:26:14.518Z -->
 
 > [!NOTE]
-> This devlog is mirrored from [Half Life](https://halflife.hackclub.com). Editing it here will not change the platform's copy, and the next sync overwrites this file.
+> This devlog is mirrored from [Half Life](https://halflife.hackclub.com) – [open the project](https://halflife.hackclub.com/projects/cmv16pl4u00j601m4ezaet4om). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
 > A custom alarm clock loosely based on the Blare guide
 
