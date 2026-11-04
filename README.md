@@ -2,6 +2,8 @@
 
 A custom alarm clock loosely based on the Blare guide.
 
+![PCB](images/PCB.png)
+
 ## Details
 PCB made using **KiCAD**<br>
 Firmware uses **CircuitPython**
