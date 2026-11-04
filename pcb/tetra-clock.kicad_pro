@@ -662,16 +662,16 @@
       {
         "filename": "tetra-clock.kicad_sch",
         "name": "tetra-clock",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "ba2ba3ec-4bfe-4070-971a-d7e5b0ea5dd2"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR3-5,BZ1,U2",
     "variants": []
   },
   "sheets": [
     [
       "ba2ba3ec-4bfe-4070-971a-d7e5b0ea5dd2",
-      "Root"
+      "tetra-clock"
     ]
   ],
   "text_variables": {},
