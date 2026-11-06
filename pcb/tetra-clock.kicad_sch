@@ -1251,12 +1251,20 @@
 		(uuid "783768f0-287e-4b83-b3bc-c605b2b577e4")
 	)
 	(no_connect
+		(at 134.62 106.68)
+		(uuid "78b47ee6-b8e7-4621-86c9-cce1198b2789")
+	)
+	(no_connect
 		(at 154.94 99.06)
 		(uuid "8fe6f4d7-a0f1-40a7-adb0-4f3209be06c2")
 	)
 	(no_connect
 		(at 107.95 110.49)
 		(uuid "a49f31b6-8944-4e7e-a402-57528df4cc8d")
+	)
+	(no_connect
+		(at 154.94 110.49)
+		(uuid "bd6a5964-c096-4928-8c56-50a9bbcfa6d2")
 	)
 	(wire
 		(pts
