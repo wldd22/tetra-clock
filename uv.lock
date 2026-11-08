@@ -220,15 +220,6 @@ wheels = [
 ]
 
 [[package]]
-name = "board"
-version = "1.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/de/7d/4de4e7b0eb780854e2c1258225a831ef29c447f0e934347ce58128939b69/board-1.0.tar.gz", hash = "sha256:cd718c3322a126d86455e24ae0cebb59a567cbdbaf03696391dccf88c8f456d6", size = 16717, upload-time = "2019-11-01T14:17:31.456Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/bd/b8/461dae0fae64be12d818efab745d520bcf4a96195ccbd5028d58d042e68b/board-1.0-py2.py3-none-any.whl", hash = "sha256:b97c986d0190a2a5181a7fe28959cd8515520b87f672796e21e1b0d32cc63e2f", size = 12869, upload-time = "2019-11-01T14:17:29.838Z" },
-]
-
-[[package]]
 name = "circuitpython-stubs"
 version = "10.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -318,7 +309,6 @@ dependencies = [
     { name = "adafruit-circuitpython-displayio-ssd1306" },
     { name = "adafruit-circuitpython-ntp" },
     { name = "adafruit-circuitpython-ssd1306" },
-    { name = "board" },
     { name = "circuitpython-stubs" },
     { name = "socketpool" },
     { name = "wifi" },
@@ -331,7 +321,6 @@ requires-dist = [
     { name = "adafruit-circuitpython-displayio-ssd1306", specifier = ">=3.0.6" },
     { name = "adafruit-circuitpython-ntp", specifier = ">=3.4.0" },
     { name = "adafruit-circuitpython-ssd1306", specifier = ">=2.12.24" },
-    { name = "board", specifier = ">=1.0" },
     { name = "circuitpython-stubs", specifier = ">=10.3.1" },
     { name = "socketpool" },
     { name = "wifi", specifier = ">=0.3.8" },
