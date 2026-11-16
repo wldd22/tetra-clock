@@ -34,7 +34,7 @@ the components used were based on the [Blare guide](https://blare.hackclub.com/d
 but the actual design and the firmware was created from scratch by me.
 
 ## Setup
-1. **Obtain hardware** - Buy the **components** and get the **PCB** fabricated ([gerber](/production/gerber/gerber.zip)).
+1. **Obtain hardware** - Buy [the **components**](BOM.csv) and get the **PCB** fabricated ([gerber](/production/gerber/gerber.zip)).
 2. **Solder parts** - Using pin headers where necessary, solder the **microcontroller**, **buzzer**, and **display** onto the board.
 3. **Install CircuitPython** - Use the [CircuitPython guide for the XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_project_circuitpython/) to install it onto the board.
 4. **Upload firmware** - Use the same guide to upload [the firmware](/firmware/code.py) to the board.
