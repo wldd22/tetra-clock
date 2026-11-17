@@ -443,7 +443,7 @@
 			(uuid "b5250056-176d-4719-ab7d-d7f550c70e98")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3D models/128x32-OLED.STEP"
+		(model "${KIPRJMOD}/3D models/OLED_0.91_128x32.stp"
 			(offset
 				(xyz 0 17.75 2.25)
 			)
