@@ -48,3 +48,15 @@ but the actual design and the firmware was created from scratch by me.
 ### PCB
 
 ![PCB](images/Routing.png)
+
+## BOM
+
+Item  | Description  | Quantity  | Source  | Cost  | Amount
+--- | --- | --- | --- | --- | ---
+Seeed Studio XIAO ESP32-S3  |  Microcontroller  |  1  |  [Robu](https://robu.in/product/seeed-studio-xiao-esp32s3-2-4ghz-wifi-ble-5-0/)  |  $12.00  |  $12.00
+0.91 inch 128x32 Blue OLED Display Module  |  OLED Screen  |  1  |  [Robu](https://robu.in/product/0-91-inch-128x32-i2c-iic-serial-blue-oled-lcd-display-module/)  |  $2.20  |  $2.20
+PCB  |  The board  |  1  |  [JLCPCB](https://jlcpcb.com/)  |  $4.00  |  $4.00
+1X20P Machined Pin Header  |  Pin headers for the MCU and display  |  1  |  [Robu](https://robu.in/product/361030120sg111901-jiln-2-54x3-0machined-pin-header-1x20p-180-l11-96-upper-pinpoint0-60-bottom-pinpoint0-50-au1u-pps/)  |  $0.20  |  $0.20
+3V Active Electromagnetic Buzzer  |  Buzzer  |  1  |  [Robu](https://robu.in/product/3v-active-electromagnetic-buzzer-pack-of-5/)  |  $0.25  |  $0.25
+Estimated total shipping  |  -  |  1  |  -  |  -  |  $10.00
+TOTAL  |  |  |  |  |  $28.65
